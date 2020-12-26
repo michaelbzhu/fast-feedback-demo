@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Fast Feedback demo</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -20,11 +20,12 @@ export default function Home() {
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
-        <button onClick={(e) => auth.signin()}>Sign In</button>
         <div>{auth?.user?.email}</div>
         <img src={auth?.user?.photoURL} />
-        {auth?.user && (
+        {auth.user ? (
           <button onClick={(e) => auth.signout()}>Sign Out</button>
+        ) : (
+          <button onClick={(e) => auth.signin()}>Sign In</button>
         )}
       </main>
 
