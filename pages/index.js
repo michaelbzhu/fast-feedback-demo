@@ -24,7 +24,7 @@ export default function Home() {
       <Head>
         <title>Fast Feedback demo</title>
       </Head>
-      <Heading>Fast Feedback</Heading>
+      <Heading>Fast Feedback demo</Heading>
       <Icon viewBox="0 0 300 251" color="red.500" boxSize="100px">
         <path
           fill="currentColor"
